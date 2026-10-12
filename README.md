@@ -1,63 +1,48 @@
-# OIBSIP
+# OIBSIP — Oasis Infobyte Internship
 
-# Iris Flower Classification
+Welcome to my project repository for the **Oasis Infobyte Internship Program (OIBSIP)**.
 
-**Oasis Infobyte Internship | Data Science Track | Task 1**
+This repository contains my internship tasks, including the source code, experiments, documentation, and project results. Each task is organized into its own folder for easy navigation.
 
-## Objective
-Train machine learning models to classify iris flowers into three species
-(Setosa, Versicolor, Virginica) from their physical measurements.
+## Internship Track
 
-## Dataset
-The Iris dataset is built into scikit-learn (`sklearn.datasets.load_iris()`).
-- 150 samples, 4 features: sepal length, sepal width, petal length, petal width (cm)
-- 3 balanced classes (50 samples each)
-- No missing values
+- **Track:** Data Science
+- **Organization:** Oasis Infobyte
+- **Primary Language:** Python
 
-## Approach
-1. Loaded the data into a pandas DataFrame and added a readable `species` column
-2. Exploratory data analysis: shape, data types, null check, descriptive statistics
-3. Visualisations: pairplot and box plots for every feature, grouped by species
-4. Feature discussion: which features separate the species best
-5. Train/test split: 80/20 (120 train, 30 test) with `random_state=42` and `stratify=y`
-6. Trained two classifiers: Logistic Regression and Random Forest
-7. Evaluated both with accuracy, confusion matrix, and classification report
-8. Compared the models with 5-fold cross-validation for a more reliable result
+## Tasks
 
-## Key Findings
-- **Petal length and petal width** are the most discriminative features. Setosa is
-  completely separated by them, and versicolor and virginica overlap only slightly.
-- **Sepal width** is the weakest feature, with heavy overlap between species.
-- All model errors were between **versicolor and virginica**, which matches the
-  overlap seen in the box plots.
+### Task 1: Iris Flower Classification
 
-## Results
+A machine learning project that classifies iris flowers into three species using their sepal and petal measurements.
 
-| Model | Test accuracy (80/20 split) | 5-fold CV accuracy |
-|---|---|---|
-| Logistic Regression | 0.97 (29/30) | 0.973 |
-| Random Forest | 0.90 (27/30) | 0.967 |
+**Tech Stack:** Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook.
 
-**Best model: Logistic Regression.** It scored highest in both evaluations and is
-simpler and faster. The test set has only 30 samples, so one flower changes
-accuracy by 3.3%. Cross-validation shows the two models perform almost equally well.
+**Project Folder:** [`DataScience-Task1-IrisClassification`](./DataScience-Task1-IrisClassification/)
 
-## Tech Stack
-Python, pandas, NumPy, scikit-learn, matplotlib, seaborn, Jupyter Notebook
-
-## How to Run
-```bash
-git clone https://github.com/sachitaaa/OIBSIP.git
-cd OIBSIP/DataScience-Task1-IrisClassification
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter
-jupyter notebook iris_classification.ipynb
-
-Then choose **Kernel → Restart & Run All**.
+**What I explored:**
+- Exploratory Data Analysis (EDA)
+- Data visualization and feature analysis
+- Logistic Regression and Random Forest
+- Confusion matrices and classification reports
+- 5-fold cross-validation
 
 ## Repository Structure
-DataScience-Task1-IrisClassification/
-├── iris_classification.ipynb
-└── README.md
+
+```text
+OIBSIP/
+├── README.md
+└── DataScience-Task1-IrisClassification/
+    ├── README.md
+    └── iris_classification.ipynb
+```
+
+## Learning Goals
+
+Through these projects, I aim to strengthen my practical skills in data analysis, machine learning, model evaluation, and project documentation.
 
 ## Author
-Sachita Aryal
+
+**Sachita Aryal**
+
+GitHub: [@sachitaaa](https://github.com/sachitaaa)
