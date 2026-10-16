@@ -38,6 +38,44 @@ The data was cleaned by removing unnecessary columns, handling duplicate records
 
 Naive Bayes achieved higher recall for the spam class in the evaluation performed for this project. Recall is important because it measures how many actual spam messages the model successfully identifies.
 
+## Model Evaluation
+
+The Multinomial Naive Bayes model was evaluated using a 80:20 train-test split with TF-IDF feature extraction.
+
+### Performance Metrics
+
+| Metric | Ham (Normal) | Spam |
+|---|---:|---:|
+| Precision | 0.97 | 0.99 |
+| Recall | 1.00 | 0.78 |
+| F1-score | 0.98 | 0.87 |
+| Support | 903 | 131 |
+
+**Overall Metrics**
+
+- **Accuracy:** 97.10%
+- **Macro Average F1-score:** 0.93
+- **Weighted Average F1-score:** 0.97
+
+### Confusion Matrix
+
+|  | Predicted Ham | Predicted Spam |
+|---|---:|---:|
+| Actual Ham | 902 | 1 |
+| Actual Spam | 29 | 102 |
+
+### Results and Observations
+
+- The model achieved **97.10% accuracy** on the test dataset.
+- Spam precision was approximately **99%**, meaning that nearly all messages predicted as spam were actually spam.
+- Spam recall was approximately **78%**, meaning the model identified 102 out of 131 actual spam messages and missed 29.
+- The model correctly classified 902 normal messages and incorrectly flagged only one normal message as spam.
+- The spam F1-score was approximately **0.87**, reflecting the balance between precision and recall.
+
+### Conclusion
+
+The Multinomial Naive Bayes model performed well on this dataset, particularly in avoiding false spam alerts. However, improving spam recall would help detect more spam messages that are currently classified as normal.
+
 ## Technologies Used
 
 - Python
