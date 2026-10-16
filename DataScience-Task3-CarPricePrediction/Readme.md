@@ -63,6 +63,31 @@ A sample car input produced a predicted selling price of **7.90 lakhs**. This is
 2. Open `Prediction.ipynb` in Jupyter Notebook.
 3. Run the notebook cells in order.
 
+
+## Run the Streamlit App Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sachitaaa/OIBSIP.git
+cd OIBSIP/DataScience-Task3-CarPricePrediction
+```
+
+### 2. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 3. Run the app
+
+```bash
+python -m streamlit run app.py
+```
+
+The app will open in your browser, where you can enter car details and get a predicted selling price.
+
+
 The dataset is provided as `car data.csv`, and the saved model is `car_price_model.pkl`.
 
 ## Limitations
