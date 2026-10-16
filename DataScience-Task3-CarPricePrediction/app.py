@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -14,7 +15,8 @@ st.set_page_config(
 # ---------------- LOAD MODEL ----------------
 @st.cache_resource
 def load_model():
-    return joblib.load("car_price_model.pkl")
+    model_path = Path(__file__).parent / "car_price_model.pkl"
+    return joblib.load(model_path)
 
 model = load_model()
 feature_names = list(model.feature_names_in_)
