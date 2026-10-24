@@ -1,10 +1,4 @@
-# OIBSIP — Oasis Infobyte Internship
 
-Welcome to my project repository for the **Oasis Infobyte Internship Program (OIBSIP)**.
-
-This repository contains my internship tasks, including the source code, experiments, documentation, and project results. Each task is organized into its own folder for easy navigation.
-
-## Internship Track
 
 - **Track:** Data Science
 - **Organization:** Oasis Infobyte
